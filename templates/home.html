@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-12 mx-auto">
+            <form action="" method="POST" class="convert py-5">
+                {% csrf_token %}
+                <div class="input-group mb-3">
+                    {{ form.url }}
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="submit">Convert</button>
+                    </div>
+                </div>
+                {% for e in form.url.errors %}
+                    <p class="text-danger">{{ e }}</p>
+                {% empty %}
+                {% endfor %}
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}
