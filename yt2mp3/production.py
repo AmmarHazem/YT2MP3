@@ -25,7 +25,7 @@ SECRET_KEY = 'i!i$mw6idevl0^^6mj(r9=ow8bwo=*6sq6$qxl*%a2*6jr4uw@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['http://yt2-mp3.herokuapp.com/']
+ALLOWED_HOSTS = ['yt2-mp3.herokuapp.com']
 
 
 # Application definition
