@@ -2,7 +2,6 @@ from django import forms
 from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib import messages
 
-from mimetypes import guess_type
 from pytube import YouTube
 
 from .models import YoutubeLink
