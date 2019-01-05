@@ -9,4 +9,4 @@ class Home(FormView):
     template_name = 'home.html'
 
     def form_valid(self, form):
-        return form.download()
+        return form.download(self.request)

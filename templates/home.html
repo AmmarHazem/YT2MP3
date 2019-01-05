@@ -4,6 +4,9 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-12 mx-auto">
+            {% include 'includes/messages.html' %}
+        </div>
+        <div class="col-md-8 col-12 mx-auto">
             <form action="" method="POST" class="convert py-5">
                 {% csrf_token %}
                 <div class="input-group mb-3">
